@@ -1,3 +1,6 @@
+# https://github.com/zbon0830/lab10-ZB-MJ
+# Partner 1: Zachary Bon
+# Partner 2: Maxine Johnson
 """
 calculator.py
 - Defines functions used to create a simple calculator
