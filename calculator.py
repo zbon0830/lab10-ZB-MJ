@@ -19,7 +19,7 @@ def div(a, b):
         return b / a
 
 def log(a, b):
-    if a <= 1:
+    if a <= 0 or a == 1:
         raise ValueError("Invalid base.")
     else:
         return math.log(b,a)
