@@ -6,11 +6,31 @@ One function per operation, in order.
 """
 # First example
 import math
-<<<<<<< HEAD
 
-def add(a,b): a + b
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("Cannot take the square root of a negative number.")
+        return math.sqrt(a)
+    except ValueError as e:
+        print(e)
+        raise
 
-def sub(a,b): a-b
+def hypotenuse(a, b):
+    try:
+        return math.hypot(a, b)
+    except Exception as e:
+        print(e)
+        raise
+
+def add(a, b):
+    return a + b
+
+def sub(a,b):
+    return a - b
+
+def mul(a,b):
+    return a * b
 
 def div(a, b):
     if a == 0:
@@ -44,3 +64,6 @@ def logarithm(a,b):
 
 def exponent(a,b):
     return a ** b
+
+
+
